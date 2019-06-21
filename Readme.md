@@ -4,6 +4,9 @@
 * [Default.aspx.cs](./CS/WebPivotExportCustomizeCell/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebPivotExportCustomizeCell/Default.aspx.vb))
 <!-- default file list end -->
 # How to customize a cell in the exported Excel document
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t424442)**
+<!-- run online end -->
 
 
 <p>When exporting an ASPxPivotGrid control to XLSX (or XLS) format, you can customize a cell appearance in the exported document using the <a href="https://documentation.devexpress.com/#AspNet/DevExpressWebASPxPivotGridPivotXlsxExportOptions_CustomizeCelltopic">PivotXlsxExportOptions.CustomizeCell</a> (or <a href="https://documentation.devexpress.com/#AspNet/DevExpressWebASPxPivotGridPivotXlsExportOptions_CustomizeCelltopic">PivotXlsExportOptions.CustomizeCell</a><u>)</u> event.</p>
