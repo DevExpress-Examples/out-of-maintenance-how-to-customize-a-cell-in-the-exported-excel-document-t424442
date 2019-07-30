@@ -5,7 +5,7 @@
 <!-- default file list end -->
 # How to customize a cell in the exported Excel document
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t424442)**
+**[[Run Online]](https://codecentral.devexpress.com/t424442/)**
 <!-- run online end -->
 
 
