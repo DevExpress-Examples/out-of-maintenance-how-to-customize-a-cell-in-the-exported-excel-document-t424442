@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------------
 
 namespace WebPivotExportCustomizeCell {
-    
-    
+
+
     public partial class Default {
-        
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +20,7 @@ namespace WebPivotExportCustomizeCell {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// ASPxButton1 control.
         /// </summary>
@@ -29,7 +29,7 @@ namespace WebPivotExportCustomizeCell {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxButton ASPxButton1;
-        
+
         /// <summary>
         /// ASPxPivotGrid1 control.
         /// </summary>
@@ -38,7 +38,7 @@ namespace WebPivotExportCustomizeCell {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.ASPxPivotGrid ASPxPivotGrid1;
-        
+
         /// <summary>
         /// fieldCountry control.
         /// </summary>
@@ -47,7 +47,7 @@ namespace WebPivotExportCustomizeCell {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.PivotGridField fieldCountry;
-        
+
         /// <summary>
         /// fieldProductName control.
         /// </summary>
@@ -56,7 +56,7 @@ namespace WebPivotExportCustomizeCell {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.PivotGridField fieldProductName;
-        
+
         /// <summary>
         /// fieldCategoryName control.
         /// </summary>
@@ -65,7 +65,7 @@ namespace WebPivotExportCustomizeCell {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.PivotGridField fieldCategoryName;
-        
+
         /// <summary>
         /// fieldSalesPerson control.
         /// </summary>
@@ -74,7 +74,7 @@ namespace WebPivotExportCustomizeCell {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.PivotGridField fieldSalesPerson;
-        
+
         /// <summary>
         /// fieldExtendedPrice control.
         /// </summary>
@@ -83,7 +83,7 @@ namespace WebPivotExportCustomizeCell {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.PivotGridField fieldExtendedPrice;
-        
+
         /// <summary>
         /// ASPxPivotGridExporter1 control.
         /// </summary>
@@ -92,7 +92,7 @@ namespace WebPivotExportCustomizeCell {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.ASPxPivotGridExporter ASPxPivotGridExporter1;
-        
+
         /// <summary>
         /// SqlDataSource1 control.
         /// </summary>
@@ -100,6 +100,6 @@ namespace WebPivotExportCustomizeCell {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.AccessDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

@@ -1,5 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPivotExportCustomizeCell", "WebPivotExportCustomizeCell\WebPivotExportCustomizeCell.csproj", "{194181EF-BABA-43CB-B0B3-DAED1822AA40}"
 EndProject
 Global
@@ -15,5 +17,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5B22C01-AB77-48B1-8C43-06BB3B2AAC55}
 	EndGlobalSection
 EndGlobal

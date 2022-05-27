@@ -1,9 +1,9 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="true" CodeBehind="Default.aspx.vb" Inherits="WebPivotExportCustomizeCell.Default" %>
 
-<%@ Register Assembly="DevExpress.Web.v15.2, Version=15.2.20.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web" TagPrefix="dx" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v15.2, Version=15.2.20.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxPivotGrid" TagPrefix="dx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -21,31 +21,47 @@
     </div>
     <div>
         <dx:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server" ClientIDMode="AutoID" 
-            DataSourceID="SqlDataSource1" Theme="Metropolis">
+            DataSourceID="SqlDataSource1" Theme="Metropolis" IsMaterialDesign="False">
             <Fields>
-                <dx:PivotGridField ID="fieldCountry" Area="ColumnArea" AreaIndex="0" 
-                    FieldName="Country">
+                <dx:PivotGridField ID="fieldCountry" Area="ColumnArea" AreaIndex="0">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="Country" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
                 <dx:PivotGridField ID="fieldProductName" Area="RowArea" AreaIndex="1" 
-                    Caption="Product" FieldName="ProductName">
+                    Caption="Product">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="ProductName" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
                 <dx:PivotGridField ID="fieldCategoryName" Area="RowArea" AreaIndex="0" 
-                    Caption="Category" FieldName="CategoryName">
+                    Caption="Category">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="CategoryName" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
                 <dx:PivotGridField ID="fieldSalesPerson" Area="ColumnArea" AreaIndex="1" 
-                    Caption="Sales Person" FieldName="Sales_Person">
+                    Caption="Sales Person">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="Sales_Person" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
                 <dx:PivotGridField ID="fieldExtendedPrice" Area="DataArea" AreaIndex="0" 
-                    Caption="Extended Price" FieldName="Extended_Price">
+                    Caption="Extended Price">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="Extended_Price" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
             </Fields>
+            <OptionsData DataProcessingEngine="Optimized" />
         </dx:ASPxPivotGrid>
         <dx:ASPxPivotGridExporter ID="ASPxPivotGridExporter1" runat="server">
         </dx:ASPxPivotGridExporter>
-        <asp:AccessDataSource ID="SqlDataSource1" runat="server" 
-            DataFile="~/App_Data/nwind.mdb" 
+	    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+            ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
             SelectCommand="SELECT [Country], [ProductName], [CategoryName], [OrderDate], [UnitPrice], [Sales Person] AS Sales_Person, [Extended Price] AS Extended_Price, [Discount], [Quantity] FROM [SalesPerson]">
-        </asp:AccessDataSource>
+	    </asp:SqlDataSource>
     </div>
     </form>
 </body>
